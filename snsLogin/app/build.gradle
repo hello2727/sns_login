@@ -46,8 +46,11 @@ dependencies {
 
     implementation Libs.Google.material
 
+    // Compose
+    implementation Libs.AndroidX.Compose.ui
+
     // Test
     testImplementation Libs.Test.junit
-    androidTestImplementation Libs.AndroidX.junit
-    androidTestImplementation Libs.AndroidX.espressoCore
+    androidTestImplementation Libs.AndroidX.Test.junit
+    androidTestImplementation Libs.AndroidX.Test.espressoCore
 }
