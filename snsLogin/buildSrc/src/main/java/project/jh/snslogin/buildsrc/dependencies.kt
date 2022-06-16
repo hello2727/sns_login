@@ -8,10 +8,15 @@ package project.jh.snslogin.buildsrc
 object Libs {
     object Versions {
         const val compose = "1.1.1"
+        const val hilt = "2.42"
     }
+
+    const val Lottie = "com.airbnb.android:lottie:5.2.0"
+    const val coil = "io.coil-kt:coil:2.1.0"
 
     object Google {
         const val material = "com.google.android.material:material:1.6.1"
+        const val accompanist = "com.google.accompanist:accompanist-appcompat-theme:0.23.1"
     }
 
     object AndroidX {
@@ -25,6 +30,7 @@ object Libs {
         object Compose {
             const val ui = "'androidx.compose.ui:ui:${Versions.compose}"
             const val uiTooling = "androidx.compose.ui:ui-tooling:${Versions.compose}"
+            const val animation = "androidx.compose.animation:animation:${Versions.compose}"
             const val foundation = "androidx.compose.foundation:foundation:${Versions.compose}"
             const val material = "androidx.compose.material:material:${Versions.compose}"
             const val materialIconsCore = "androidx.compose.material:material-icons-core:${Versions.compose}"
@@ -33,6 +39,20 @@ object Libs {
             const val lifecycleViewmodelCompose = "androidx.lifecycle:lifecycle-viewmodel-compose:2.4.1"
             const val runtimeLivedata = "androidx.compose.runtime:runtime-livedata:${Versions.compose}"
             const val runtimeRxjava2 = "androidx.compose.runtime:runtime-rxjava2:${Versions.compose}"
+
+            object Test {
+                const val ui = "androidx.compose.ui:ui-test-junit4:${Versions.compose}"
+            }
+        }
+
+        object Hilt {
+            const val android = "com.google.dagger:hilt-android:${Versions.hilt}"
+            const val compiler = "com.google.dagger:hilt-compiler:${Versions.hilt}"
+            const val navigationCompose = "androidx.hilt:hilt-navigation-compose:1.0.0"
+
+            object Test {
+                const val testing = "com.google.dagger:hilt-android-testing:${Versions.hilt}"
+            }
         }
 
         object Test {
