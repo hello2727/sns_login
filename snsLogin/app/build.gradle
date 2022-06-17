@@ -6,12 +6,12 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk Versions.targetSdk
 
     defaultConfig {
         applicationId "project.jh.snslogin"
-        minSdk 21
-        targetSdk 32
+        minSdk Versions.minSdk
+        targetSdk Versions.targetSdk
         versionCode 1
         versionName "1.0"
 
@@ -36,25 +36,25 @@ android {
         compose true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion Libs.Versions.compose
+        kotlinCompilerExtensionVersion = Versions.compose
     }
 }
 
 dependencies {
 
-    implementation Libs.AndroidX.coreKtx
-    implementation Libs.AndroidX.appcompat
-    implementation Libs.AndroidX.constraintlayout
-    implementation Libs.AndroidX.navigationFragmentKtx
-    implementation Libs.AndroidX.navigationUiKtx
+    implementation(Libs.AndroidX.coreKtx)
+    implementation(Libs.AndroidX.appcompat)
+    implementation(Libs.AndroidX.constraintlayout)
+    implementation(Libs.AndroidX.navigationFragmentKtx)
+    implementation(Libs.AndroidX.navigationUiKtx)
 
-    implementation Libs.Google.material
+    implementation(Libs.Google.material)
 
     // Compose
-    implementation Libs.AndroidX.Compose.ui
+    implementation(Libs.AndroidX.Compose.ui)
 
     // Test
-    testImplementation Libs.Test.junit
-    androidTestImplementation Libs.AndroidX.Test.junit
-    androidTestImplementation Libs.AndroidX.Test.espressoCore
+    testImplementation(Libs.Test.junit)
+    androidTestImplementation(Libs.AndroidX.Test.junit)
+    androidTestImplementation(Libs.AndroidX.Test.espressoCore)
 }
