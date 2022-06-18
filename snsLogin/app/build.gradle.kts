@@ -1,39 +1,42 @@
 import project.jh.snslogin.buildsrc.Libs
 
 plugins {
-    id 'com.android.application'
-    id 'org.jetbrains.kotlin.android'
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
 }
 
 android {
-    compileSdk Versions.targetSdk
+    compileSdk = Versions.targetSdk
 
     defaultConfig {
-        applicationId "project.jh.snslogin"
-        minSdk Versions.minSdk
-        targetSdk Versions.targetSdk
-        versionCode 1
-        versionName "1.0"
+        applicationId = "project.jh.snslogin"
+        minSdk = Versions.minSdk
+        targetSdk = Versions.targetSdk
+        versionCode = 1
+        versionName = "1.0"
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = Libs.AndroidX.junitRunner
     }
 
     buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        getByName("debug") {
+            isMinifyEnabled = false
+        }
+        getByName("release") {
+            isMinifyEnabled = true
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = "1.8"
     }
     buildFeatures {
-        viewBinding true
-        compose true
+        viewBinding = true
+        compose = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = Versions.compose

@@ -31,6 +31,7 @@ object Libs {
         const val navigationFragmentKtx = "androidx.navigation:navigation-fragment-ktx:2.4.2"
         const val navigationUiKtx = "androidx.navigation:navigation-ui-ktx:2.4.2"
         const val startupRuntime = "androidx.startup:startup-runtime:1.1.1"
+        const val junitRunner = "androidx.test.runner.AndroidJUnitRunner"
 
         object Compose {
             const val ui = "androidx.compose.ui:ui:${Versions.compose}"
