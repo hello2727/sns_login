@@ -32,7 +32,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = Versions.jvmTarget
     }
     buildFeatures {
         viewBinding = true
@@ -54,10 +54,8 @@ dependencies {
     implementation(Libs.Google.material)
 
     // Compose
-    implementation(Libs.AndroidX.Compose.ui)
+    implementCompose()
 
     // Test
-    testImplementation(Libs.Test.junit)
-    androidTestImplementation(Libs.AndroidX.Test.junit)
-    androidTestImplementation(Libs.AndroidX.Test.espressoCore)
+    implementTest()
 }

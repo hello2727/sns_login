@@ -3,9 +3,28 @@ import project.jh.snslogin.buildsrc.Libs
 
 /**
  * Created by jihye
- * Date: 2022/05/29
+ * Date: 2022/06/18
  */
+fun DependencyHandlerScope.implementKotlin() {
+    "implementation"(Libs.Kotlin.stdlib)
+}
 
 fun DependencyHandlerScope.implementCompose() {
     "implementation"(Libs.AndroidX.Compose.ui)
+    "implementation"(Libs.AndroidX.Compose.uiTooling)
+    "implementation"(Libs.AndroidX.Compose.animation)
+    "implementation"(Libs.AndroidX.Compose.foundation)
+    "implementation"(Libs.AndroidX.Compose.material)
+    "implementation"(Libs.AndroidX.Compose.materialIconsCore)
+    "implementation"(Libs.AndroidX.Compose.materialIconsExtended)
+    "implementation"(Libs.AndroidX.Compose.activityCompose)
+    "implementation"(Libs.AndroidX.Compose.lifecycleViewmodelCompose)
+    "implementation"(Libs.AndroidX.Compose.runtimeLivedata)
+    "implementation"(Libs.AndroidX.Compose.runtimeRxjava2)
+}
+
+fun DependencyHandlerScope.implementTest() {
+    "testImplementation"(Libs.Test.junit)
+    "androidTestImplementation"(Libs.AndroidX.Test.junit)
+    "androidTestImplementation"(Libs.AndroidX.Test.espressoCore)
 }

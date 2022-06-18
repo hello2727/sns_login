@@ -4,10 +4,13 @@ package project.jh.snslogin.buildsrc
  * Created by jihye
  * Date: 2022/05/29
  */
-
 object Libs {
     const val Lottie = "com.airbnb.android:lottie:5.2.0"
     const val coil = "io.coil-kt:coil:2.1.0"
+
+    object Kotlin {
+        const val stdlib = "org.jetbrains.kotlin:kotlin-stdlib:1.6.10"
+    }
 
     object Google {
         const val material = "com.google.android.material:material:1.6.1"
