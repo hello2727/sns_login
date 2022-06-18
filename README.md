@@ -1,2 +1,2 @@
-# email_login
+# sns login
 #sdk
