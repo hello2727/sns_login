@@ -36,7 +36,8 @@ fun DependencyHandlerScope.implementCompose() {
 }
 
 fun DependencyHandlerScope.implementDi() {
-
+    "implementation"(Libs.Google.Hilt.android)
+    "kapt"(Libs.Google.Hilt.compiler)
 }
 
 fun DependencyHandlerScope.implementRoom() {

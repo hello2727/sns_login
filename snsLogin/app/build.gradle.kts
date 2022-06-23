@@ -4,6 +4,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("kotlin-kapt")
+//    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -41,6 +42,9 @@ android {
     }
     composeOptions {
         kotlinCompilerExtensionVersion = Versions.compose
+    }
+    kapt {
+        correctErrorTypes = true
     }
 }
 

@@ -1,4 +1,4 @@
-package project.jh.snslogin
+package project.jh.snslogin.application
 
 import android.app.Application
 
