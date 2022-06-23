@@ -3,6 +3,7 @@ import project.jh.snslogin.buildsrc.Libs
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("kotlin-kapt")
 }
 
 android {
@@ -45,17 +46,10 @@ android {
 
 dependencies {
 
-    implementation(Libs.AndroidX.coreKtx)
-    implementation(Libs.AndroidX.appcompat)
-    implementation(Libs.AndroidX.constraintlayout)
-    implementation(Libs.AndroidX.navigationFragmentKtx)
-    implementation(Libs.AndroidX.navigationUiKtx)
-
-    implementation(Libs.Google.material)
-
-    // Compose
+    implementAndroidX()
+    implementGoogle()
     implementCompose()
-
-    // Test
+    implementDi()
+    implementRoom()
     implementTest()
 }

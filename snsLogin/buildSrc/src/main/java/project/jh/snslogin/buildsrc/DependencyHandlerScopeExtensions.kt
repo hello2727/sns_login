@@ -9,6 +9,18 @@ fun DependencyHandlerScope.implementKotlin() {
     "implementation"(Libs.Kotlin.stdlib)
 }
 
+fun DependencyHandlerScope.implementAndroidX() {
+    "implementation"(Libs.AndroidX.coreKtx)
+    "implementation"(Libs.AndroidX.appcompat)
+    "implementation"(Libs.AndroidX.constraintlayout)
+    "implementation"(Libs.AndroidX.navigationFragmentKtx)
+    "implementation"(Libs.AndroidX.navigationUiKtx)
+}
+
+fun DependencyHandlerScope.implementGoogle() {
+    "implementation"(Libs.Google.material)
+}
+
 fun DependencyHandlerScope.implementCompose() {
     "implementation"(Libs.AndroidX.Compose.ui)
     "implementation"(Libs.AndroidX.Compose.uiTooling)
@@ -21,6 +33,17 @@ fun DependencyHandlerScope.implementCompose() {
     "implementation"(Libs.AndroidX.Compose.lifecycleViewmodelCompose)
     "implementation"(Libs.AndroidX.Compose.runtimeLivedata)
     "implementation"(Libs.AndroidX.Compose.runtimeRxjava2)
+}
+
+fun DependencyHandlerScope.implementDi() {
+
+}
+
+fun DependencyHandlerScope.implementRoom() {
+    "implementation"(Libs.AndroidX.Room.runtime)
+    "kapt"(Libs.AndroidX.Room.compiler)
+    "implementation"(Libs.AndroidX.Room.ktx)
+    "implementation"(Libs.AndroidX.Room.test)
 }
 
 fun DependencyHandlerScope.implementTest() {

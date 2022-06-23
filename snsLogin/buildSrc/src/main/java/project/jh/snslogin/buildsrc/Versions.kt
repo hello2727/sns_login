@@ -10,4 +10,5 @@ object Versions {
 
     const val compose = "1.1.1"
     const val hilt = "2.42"
+    const val room = "2.4.2"
 }
