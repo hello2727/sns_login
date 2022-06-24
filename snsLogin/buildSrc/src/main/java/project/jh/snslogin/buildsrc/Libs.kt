@@ -17,6 +17,8 @@ object Libs {
         const val accompanist = "com.google.accompanist:accompanist-appcompat-theme:0.23.1"
 
         object Hilt {
+            const val plugin = "com.google.dagger:hilt-android-gradle-plugin:${Versions.hilt}"
+
             const val android = "com.google.dagger:hilt-android:${Versions.hilt}"
             const val compiler = "com.google.dagger:hilt-compiler:${Versions.hilt}"
             const val navigationCompose = "androidx.hilt:hilt-navigation-compose:1.0.0"
