@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "snsLogin"
-include ':app'
-include ':script-plugin'
+include(":app")
+include(":script-plugin")
