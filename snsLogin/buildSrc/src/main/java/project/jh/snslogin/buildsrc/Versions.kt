@@ -4,8 +4,8 @@
  */
 
 object Versions {
-    const val targetSdk = 32
-    const val minSdk = 21
+    const val targetSdk = 31
+    const val minSdk = 23
     const val jvmTarget = "1.8"
 
     const val compose = "1.1.1"
