@@ -1,12 +1,32 @@
 import org.gradle.api.Project
+import java.io.FileInputStream
+import java.util.*
 
 fun Project.buildVersionCode(): Int {
-    val  s = file("version.properties")
-    return 0
+    val props = Properties()
+    props.load(FileInputStream(file("version.properties")))
+
+    val major = props.getProperty("VERSION_MAJOR").toInt()
+    val minor = props.getProperty("VERSION_MINOR").toInt()
+    val patch = props.getProperty("VERSION_PATCH").toInt()
+    val qa = props.getProperty("VERSION_QA").toInt()
+
+    val versionCode = (major * 100_000_000) + (minor * 1_000_000) + (patch * 10_000) + (qa * 100)
+
+    println("versionCode = $versionCode")
+
+    return versionCode
 }
 
 fun Project.buildVersionName(): String {
-    return ""
+    val props = Properties()
+    props.load(FileInputStream(file("version.properties")))
+
+    val versionName = "${props.getProperty("VERSION_MAJOR").toInt()}.${props.getProperty("VERSION_MINOR").toInt()}.${props.getProperty("VERSION_PATCH").toInt()}.${props.getProperty("VERSION_QA").toInt()}.${buildNumber()}"
+
+    println("versionName = $versionName")
+
+    return versionName
 }
 
 private fun buildNumber(): Int {
