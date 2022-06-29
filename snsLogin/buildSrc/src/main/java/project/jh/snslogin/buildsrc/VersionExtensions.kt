@@ -1,3 +1,5 @@
+package project.jh.snslogin.buildsrc
+
 import org.gradle.api.Project
 import java.io.FileInputStream
 import java.util.*
