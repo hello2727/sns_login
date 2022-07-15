@@ -77,7 +77,13 @@ object Libs {
     }
 
     object Firebase {
+        const val bom = "com.google.firebase:firebase-bom:30.2.0"
+        const val auth = "com.google.firebase:firebase-auth"
+        const val playServiceAuth = "com.google.android.gms:play-services-auth:20.2.0"
+    }
 
+    object Auth {
+        const val naver = "com.navercorp.nid:oauth:5.1.1"
     }
 
     object Test {

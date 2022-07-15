@@ -47,6 +47,14 @@ fun DependencyHandlerScope.implementRoom() {
     "implementation"(Libs.AndroidX.Room.test)
 }
 
+fun DependencyHandlerScope.implementFirebase() {
+
+}
+
+fun DependencyHandlerScope.implementAuth() {
+
+}
+
 fun DependencyHandlerScope.implementTest() {
     "testImplementation"(Libs.Test.junit)
     "androidTestImplementation"(Libs.AndroidX.Test.junit)

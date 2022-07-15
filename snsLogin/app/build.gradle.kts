@@ -64,5 +64,7 @@ dependencies {
     implementCompose()
     implementDi()
     implementRoom()
+    implementFirebase()
+    implementAuth()
     implementTest()
 }
