@@ -52,7 +52,6 @@ android {
     }
     kapt {
         correctErrorTypes = true
-        showProcessorTimings = true
     }
 }
 

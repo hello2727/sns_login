@@ -16,3 +16,4 @@ rootProject.name = "snsLogin"
 include(":app")
 include(":script-plugin")
 include(":benchmark")
+include(":core-data")
