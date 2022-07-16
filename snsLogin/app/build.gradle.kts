@@ -1,5 +1,4 @@
 import project.jh.snslogin.buildsrc.Libs
-import project.jh.snslogin.buildsrc.buildVersionCode
 
 plugins {
     id("com.android.application")

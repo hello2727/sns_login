@@ -52,7 +52,10 @@ fun DependencyHandlerScope.implementFirebase() {
 }
 
 fun DependencyHandlerScope.implementAuth() {
-
+    "implementation"(Libs.Auth.naver)
+    "implementation"(Libs.Auth.kakao)
+    "implementation"(Libs.Auth.facebook)
+    "implementation"(Libs.Auth.spotify)
 }
 
 fun DependencyHandlerScope.implementTest() {

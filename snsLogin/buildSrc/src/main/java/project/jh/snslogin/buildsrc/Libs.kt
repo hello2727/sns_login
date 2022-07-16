@@ -84,6 +84,9 @@ object Libs {
 
     object Auth {
         const val naver = "com.navercorp.nid:oauth:5.1.1"
+        const val facebook = "com.facebook.android:facebook-login:latest.release"
+        const val kakao = "com.kakao.sdk:v2-all:2.11.0"
+        const val spotify = "com.spotify.android:auth:1.2.5"
     }
 
     object Test {
