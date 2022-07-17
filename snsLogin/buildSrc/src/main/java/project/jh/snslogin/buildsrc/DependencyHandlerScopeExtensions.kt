@@ -17,6 +17,10 @@ fun DependencyHandlerScope.implementAndroidX() {
     "implementation"(Libs.AndroidX.navigationUiKtx)
 }
 
+fun DependencyHandlerScope.implementStartUp() {
+    "implementation"(Libs.AndroidX.startupRuntime)
+}
+
 fun DependencyHandlerScope.implementGoogle() {
     "implementation"(Libs.Google.material)
 }
