@@ -21,6 +21,10 @@ fun DependencyHandlerScope.implementStartUp() {
     "implementation"(Libs.AndroidX.startupRuntime)
 }
 
+fun DependencyHandlerScope.implementWorkManager() {
+    "implementation"(Libs.AndroidX.work)
+}
+
 fun DependencyHandlerScope.implementGoogle() {
     "implementation"(Libs.Google.material)
 }
